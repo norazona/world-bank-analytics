@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_world_bank__indicators.sql
+    description: Cleaned and typed World Bank indicator record
+    columns:
+      - name: country_code
+        tests:
+          - not_null
+      - name: indicator_code
+        tests:
+          - not_null
+      - name: year
+        tests:
+          - not_null
+      - name: indicator_value
+        tests:
+          - not_null
