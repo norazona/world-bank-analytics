@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_world_bank__indicators.sql
+  - name: stg_world_bank__indicators
     description: Cleaned and typed World Bank indicator record
     columns:
       - name: country_code
