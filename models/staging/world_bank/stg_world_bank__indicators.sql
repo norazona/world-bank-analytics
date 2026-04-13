@@ -7,7 +7,7 @@ renamed as (
         concat(country_code, replace(indicator_id, '.', ''), cast(year as string)) as world_bank_key,
         -- keys
         country_code as country_id,
-        replace(indicator_id, '.', '') AS indicator_id,
+        indicator_id,
         cast(year as int64) as year,
         -- dimensions
         country_name,
