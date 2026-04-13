@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: world_bank_raw
+    database: test-project-349122   # GCP project
+    schema: indicators_raw         # BQ dataset where ETL lands data
+    tables:
+      - name: worldbank_indicators_raw # table name
+        description: "Raw World Bank economic indicators from ETL pipeline"
+        columns:
+          - name: country_code
+            description: "ISO 3-letter country code"
+          - name: country_name
+            description: "Full name of the country"
+          - name: year
+          - name: indicator_id
+            description: "World Bank indicator code e.g. NY.GDP.MKTP.CD"
+          - name: indicator_name
+          - name: value
+          - name: load_timestamp
+            description: "Timestamp when ETL loaded this record"
