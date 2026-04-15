@@ -4,10 +4,10 @@ models:
   - name: stg_world_bank__indicators
     description: Cleaned and typed World Bank indicator record
     columns:
-      - name: country_code
+      - name: country_id
         tests:
           - not_null
-      - name: indicator_code
+      - name: indicator_id
         tests:
           - not_null
       - name: year
