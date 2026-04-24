@@ -17,7 +17,8 @@ pivoted as (
         max(case when indicator_id = 'SL.UEM.TOTL.ZS' then indicator_value end) as unemployment_rate,
         max(case when indicator_id = 'SL.TLF.CACT.ZS' then indicator_value end) as labor_participation,
         max(case when indicator_id = 'SP.POP.TOTL' then indicator_value end) as total_population,
-        max(case when indicator_id = 'SI.DST.FRST.20' then indicator_value end) as income_share_lowest_20_pct
+        max(case when indicator_id = 'SI.DST.FRST.20' then indicator_value end) as income_share_lowest_20_pct,
+        max(case when indicator_id = 'SL.EMP.TOTL.SP.ZS' then indicator_value end) as employment_to_population_ratio
 
 
     from base
